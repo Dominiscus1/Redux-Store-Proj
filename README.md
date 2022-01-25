@@ -9,7 +9,7 @@
   - [License](#License)
   - [Questions](#Questions)
   ## Description
-  To create an e-commerce platform using redux instead of global API
+  To create an e-commerce platform using redux instead of context global API
   
   ## Installations
   npm run seeds and to seed database and then npm run develop.
