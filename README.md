@@ -21,7 +21,8 @@
   React,graphql,mongoose, stripe.
 
   ## Preview
-  
+  ![Redux Preview](https://user-images.githubusercontent.com/55556978/150905122-a9f44fab-6887-45fe-8cf3-4bb23b335d5f.png)
+
 
   ## Launch
 
