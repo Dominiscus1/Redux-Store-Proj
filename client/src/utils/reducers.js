@@ -10,18 +10,15 @@ import {
   TOGGLE_CART
 } from "./actions";
 
-// TODO:
-//  create a const variable 'initialState' object which has the following properties:
-//    'products' and initalize it with an empty array
-//    'categories' and initialize it with an empty array
-//    'currentCategory' and initialize it with an empty string
-//    'cart' and initialize it with an empty array
-//    'cartOpen' and initialize it wtih false boolean value
-//  or you can copy the initial value passed to useProductReducer from GlobalState.js
+const initialState = {
+  products: [],
+  categories: [],
+  currentCategory: '',
+  cart: [],
+  cartOpen: false,
+}
 
-//  ToDO:
-//    Make the first input parameter 'state' accept 'initialState' as its default value
-export const reducers = (state, action) => {
+export const reducers = (state = initialState, action) => {
   switch (action.type) {
     case UPDATE_PRODUCTS:
       return {
@@ -95,12 +92,4 @@ export const reducers = (state, action) => {
   }
 };
 
-// TODO:
-//  remove the following code
-export function useProductReducer(initialState) {
-  return useReducer(reducer, initialState);
-}
-
-// TODO:
-//  add export default reducers below
 export default reducers;
